@@ -11,7 +11,7 @@ parser=argparse.ArgumentParser(
 
 # Default shortener is tinyurl as it does not require any additional configuration such as API keys etc.
 parser.add_argument('--shortener', type=str, default='Tinyurl', help="Shortener: Tinyurl")
-parser.add_argument('--url', type=str, default='https://google.ca', help="Your URL")
+parser.add_argument('--url', type=str, default='', help="Your URL: ie. http://google.ca")
 args=parser.parse_args()
 
 def shortUrl(shortener, url):
